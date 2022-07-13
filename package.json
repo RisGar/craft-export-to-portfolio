@@ -5,11 +5,16 @@
   "main": "index.ts",
   "scripts": {
     "build": "webpack --mode=production",
-    "dev": "webpack serve --mode=development"
+    "dev": "webpack serve --mode=development",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
-  "author": "Craft",
+  "author": "Rishab Garg",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@craftdocs/craft-extension-api": "0.0.4",
     "@craftdocs/craft-extension-api-sdk": "0.0.4",
     "@tailwindcss/forms": "^0.3.4",
@@ -20,6 +25,8 @@
     "css-loader": "^6.5.1",
     "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.0",
+    "pinst": "^3.0.0",
     "postcss": "^8.4.4",
     "postcss-cli": "^9.0.2",
     "postcss-loader": "^6.2.1",
