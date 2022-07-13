@@ -12,17 +12,8 @@
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "lib": [
-      "dom",
-      "es5",
-      "scripthost",
-      "es2019"
-    ],
-    "typeRoots": [
-      "./node_modules/@craftdocs/craft-extension-api"
-    ]
+    "lib": ["dom", "es5", "scripthost", "es2019"],
+    "typeRoots": ["./node_modules/@craftdocs/craft-extension-api"]
   },
-  "include": [
-    "**/*.ts"
-  ],
+  "include": ["**/*.ts"]
 }
